@@ -17,6 +17,10 @@
     
             
                 
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-etoc/plugin.css">
+                
+            
+                
                 <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
                 
             
@@ -380,6 +384,18 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="&#x5012;&#x6392;&#x7D22;&#x5F15;">&#x5012;&#x6392;&#x7D22;&#x5F15;</h1>
+<!-- toc --><div id="toc" class="toc">
+
+<ul>
+<li><a href="#analysis">Analysis</a><ul>
+<li><a href="#&#x5185;&#x5EFA;&#x7684;&#x5206;&#x6790;&#x5668;">&#x5185;&#x5EFA;&#x7684;&#x5206;&#x6790;&#x5668;</a></li>
+<li><a href="#&#x6D4B;&#x8BD5;&#x5206;&#x6790;&#x5668;">&#x6D4B;&#x8BD5;&#x5206;&#x6790;&#x5668;</a></li>
+<li><a href="#&#x6307;&#x5B9A;&#x5206;&#x6790;&#x5668;">&#x6307;&#x5B9A;&#x5206;&#x6790;&#x5668;</a></li>
+</ul>
+</li>
+</ul>
+
+</div><!-- tocstop -->
 <p>&#x5728;&#x7B2C;&#x4E8C;&#x8282;&#x6211;&#x4EEC;&#x63D0;&#x5230;&#xFF0C;&#x4F20;&#x7EDF;&#x6570;&#x636E;&#x5E93;&#x4E3A;&#x7279;&#x5B9A;&#x5217;&#x589E;&#x52A0;&#x4E00;&#x4E2A;&#x7D22;&#x5F15;&#xFF0C;&#x4F8B;&#x5982;B-Tree&#x7D22;&#x5F15;&#x6765;&#x52A0;&#x901F;&#x68C0;&#x7D22;&#x3002;Elasticsearch&#x4F7F;&#x7528;&#x4E00;&#x79CD;&#x53EB;&#x505A;<strong>&#x5012;&#x6392;&#x7D22;&#x5F15;(inverted index)</strong>&#x7684;&#x7ED3;&#x6784;&#x6765;&#x505A;&#x5FEB;&#x901F;&#x7684;&#x5168;&#x6587;&#x641C;&#x7D22;&#x3002;&#x5012;&#x6392;&#x7D22;&#x5F15;&#x7531;&#x5728;&#x6587;&#x6863;&#x4E2D;&#x51FA;&#x73B0;&#x7684;&#x552F;&#x4E00;&#x7684;&#x5355;&#x8BCD;&#x5217;&#x8868;&#xFF0C;&#x4EE5;&#x53CA;&#x5BF9;&#x4E8E;&#x6BCF;&#x4E2A;&#x5355;&#x8BCD;&#x5728;&#x6587;&#x6863;&#x4E2D;&#x7684;&#x4F4D;&#x7F6E;&#x7EC4;&#x6210;&#x3002;</p>
 <p>&#x4F8B;&#x5982;&#xFF0C;&#x6211;&#x4EEC;&#x6709;&#x4E24;&#x4E2A;&#x6587;&#x6863;&#xFF0C;&#x6BCF;&#x4E2A;&#x6587;&#x6863;&#x5185;&#x5BB9;&#x4E3A;&#xFF1A;</p>
 <ol>
@@ -696,7 +712,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"倒排索引","level":"1.4.2","depth":2,"next":{"title":"复合字段","level":"1.4.3","depth":2,"path":"chapter3/section1.3.md","ref":"chapter3/section1.3.md","articles":[]},"previous":{"title":"映射","level":"1.4.1","depth":2,"path":"chapter3/section1.2.md","ref":"chapter3/section1.2.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter4/chapter4.1.md","mtime":"2018-12-11T02:29:48.030Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-12-17T07:38:12.421Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"倒排索引","level":"1.4.2","depth":2,"next":{"title":"复合字段","level":"1.4.3","depth":2,"path":"chapter3/section1.3.md","ref":"chapter3/section1.3.md","articles":[]},"previous":{"title":"映射","level":"1.4.1","depth":2,"path":"chapter3/section1.2.md","ref":"chapter3/section1.2.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["etoc"],"pluginsConfig":{"etoc":{"h2lb":3,"header":1,"maxdepth":4,"mindepth":3,"notoc":false},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter4/chapter4.1.md","mtime":"2018-12-11T02:29:48.030Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-12-17T11:03:25.962Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -704,6 +720,10 @@
         
     <script src="../gitbook/gitbook.js"></script>
     <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-etoc/plugin.js"></script>
+        
     
         
         <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
